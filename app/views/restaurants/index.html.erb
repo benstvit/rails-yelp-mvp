@@ -1,12 +1,9 @@
-<h1>All the best restaurants in town</h1>
-
-<%= link_to "Add new restaurant", new_restaurant_path, class: 'btn btn-primary' %>
 
 <div class="restaurants">
-  <ul class="list">
-        <% @restaurants.each do |restaurant| %>
-          <h3><li><%= link_to restaurant.name, restaurant_path(restaurant) %></li></h3>
-          <p><li><%= restaurant.category %></li></p>
-        <% end %>
+  <ul class="list-unstyled">
+      <% @restaurants.each do |restaurant| %>
+        <li class='fs-3 fw-bold text-reset'><%= link_to restaurant.name, restaurant_path(restaurant), class: 'text-decoration-none' %></li></h3>
+        <li> <%= restaurant.category %></li>
+      <% end %>
   </ul>
 </div>

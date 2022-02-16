@@ -11,8 +11,25 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+@import "restaurants";
+@import "reviews";
 
 .container {
   margin: 0 auto;
   text-align: center;
 }
+
+.navbar {
+  background-color: rgb(170, 170, 170);
+}
+
+.restaurant-name {
+  margin: 20px;
+}
+
+.restaurant {
+  color: black;
+  font-weight: 300;
+}
+
+
